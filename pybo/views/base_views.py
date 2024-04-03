@@ -6,6 +6,7 @@ from django.db.models import Q
 from ..models import Question
 
 def index(request):
+    3/0 # 강제로 오류 발생
     # return HttpResponse("안녕하세요 pybo에 오신것을 환영합니다.")
     page = request.GET.get('page','1') # 페이지
     kw = request.GET.get('kw','') # 검색어
